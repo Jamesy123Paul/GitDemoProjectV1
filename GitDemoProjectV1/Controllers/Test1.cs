@@ -6,6 +6,7 @@ namespace GitDemoProjectV1.Controllers
     [Route("[controller]")]
     public class Test1 : ControllerBase
     {
+        private readonly IActionResult _result;
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"

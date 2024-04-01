@@ -19,7 +19,7 @@ namespace GitDemoProjectV1.Controllers
             _logger = logger;
         }
 
-        public IActionResult Update()
+        public IActionResult UpdateMe()
         {
             return Ok(new { _results = _results });
         }

@@ -19,6 +19,11 @@ namespace GitDemoProjectV1.Controllers
             _logger = logger;
         }
 
+        public IActionResult Update()
+        {
+            return Ok(new { _results = _results });
+        }
+
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
